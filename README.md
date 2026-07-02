@@ -1,20 +1,14 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Flight-Call-Bot
 
-# Run and deploy your AI Studio app
+This is a call attendant bot for Air Services, built with React and the OpenAI API.
 
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/b68e8c4c-54b2-4bb7-b78c-38fed39dd0a9
+## Features
+- Disruption Management
+- Autonomous Rebooking and Refund Processing
+- Conversational Flight Search and Booking
+- Voice input support (Hindi/English)
 
 ## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+1. Install dependencies: `npm install`
+2. Set the `VITE_OPENAI_API_KEY` in `.env` to your OpenAI API key
+3. Run the app: `npm run dev`
