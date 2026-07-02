@@ -1,0 +1,6 @@
+{
+  "name": "SkyJet Recovery",
+  "description": "An elegant flight recovery portal allowing passengers to look up disrupted flights, select rebooking alternatives, download boarding passes, request refunds, and chat with an assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

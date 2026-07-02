@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  
+  --color-primary: #002869;
+  --color-primary-container: #0b3d91;
+  --color-on-primary-container: #8dadff;
+  --color-on-primary: #ffffff;
+  --color-secondary: #835500;
+  --color-secondary-container: #feae2c;
+  --color-on-secondary-container: #6b4500;
+  --color-tertiary: #521a00;
+  --color-tertiary-container: #762900;
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  --color-background: #f8f9fa;
+  --color-on-background: #191c1d;
+  --color-surface: #f8f9fa;
+  --color-surface-dim: #d9dadb;
+  --color-surface-bright: #f8f9fa;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f3f4f5;
+  --color-surface-container: #edeeef;
+  --color-surface-container-high: #e7e8e9;
+  --color-surface-container-highest: #e1e3e4;
+  --color-on-surface: #191c1d;
+  --color-on-surface-variant: #434652;
+  --color-inverse-surface: #2e3132;
+  --color-inverse-on-surface: #f0f1f2;
+  --color-outline: #747783;
+  --color-outline-variant: #c4c6d3;
+
+  --animate-fade-in-up: fadeInUp 0.5s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-on-surface);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100dvh;
+  font-family: var(--font-sans);
+}
+
+.high-trust-shadow {
+  box-shadow: 0 8px 24px rgba(11, 61, 145, 0.06);
+}
+
+.high-trust-shadow-hover {
+  transition: all 0.25s ease-in-out;
+}
+
+.high-trust-shadow-hover:hover {
+  box-shadow: 0 12px 32px rgba(11, 61, 145, 0.12);
+  transform: translateY(-2px);
+}
+
+/* Custom dashed line styling for flight paths */
+.flight-path-dashed {
+  background-image: linear-gradient(to right, #747783 33%, rgba(255,255,255,0) 0%);
+  background-position: bottom;
+  background-size: 6px 1px;
+  background-repeat: repeat-x;
+}
